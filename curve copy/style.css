@@ -1,0 +1,188 @@
+
+h1, h3 {
+    margin: 0;
+    padding: 100px 0;
+    font: 44px "Arial";
+    text-align: center;
+
+}
+h4{
+    text-align: center;
+    padding: 20px;
+}
+
+button{
+   position: center;
+}
+header h1 {
+    color: white;
+}
+
+section {
+    margin: 0;
+    position: fixed;
+    height: 1060px;
+    max-width:35%;
+    background-color: white;
+    border-top-right-radius: 30% 50%;
+    border-bottom-right-radius: 30% 50%;
+}
+
+.box1 {background: #2ecc71;}
+.box2 { background: #f1c40f;}
+.box3 { background: #e67e22;}
+.box4 { background: #ce1126;}
+.box5 { background: #9b59b6;}
+.box6 { background: #3498db;}
+.box7 { background: #1abc9c;}
+.box8 { background: #34495e;}
+.box9 { background: #e743c3;}
+.box10 {background: #16A085}
+
+.rightNav{
+    float: right;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+
+}
+.move{
+    justify-content: flex-start;
+}
+
+.rightNav a{
+
+    height:10.48vh;
+    padding: 6px 8px 6px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.container{
+    height: 100vh;
+}
+
+.box{
+    text-align: right;
+    padding: 5px;
+    justify-content: center;
+}
+
+.box a{
+    color: white;
+}
+
+.icons{
+    float: right;
+}
+
+.button{
+    align-self: center;
+    font-size: 18px;
+}
+
+/* Start of CSS for Grren open pages*/
+.overlayGreen {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-color: #2ecc71;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlayGold {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-color: #f1c40f;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlayGreen a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlayGreen a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlayGreen .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlayGreen a {font-size: 20px}
+    .overlayGreen .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*End CSS for Open pages*/
+
+.overlay #greenCard{
+    background-color: #2ecc71;
+}
+
+/*device specific image adjustment*/
+.responsive{
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    padding: 20px;
+}
+
+/*images aligned left*/
+.image_card1{
+    align-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #2ecc71;
+    opacity: 0.25;
+}
+
+.overlayGold {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-color: #f1c40f;}
+overflow-x: hidden;
+transition: 0.5s;
+}

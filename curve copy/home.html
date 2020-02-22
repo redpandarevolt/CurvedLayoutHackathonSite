@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!--Front Page Rainbow Navigation on Right-->
+    <div class="rightNav">
+        <div class="container">
+            <div class="box box1" id="greenCard" onclick="openNav()" ><a>Event</a></div>
+            <div class="box box2" onclick="openNav()"><a>Description </a></div>
+            <div class="box box3" onclick="openNav()"><a>Schedule </a></div>
+            <div class="box box4" onclick="openNav()"><a>Hackathon Prep </a></div>
+            <div class="box box5" onclick="openNav()"><a>Documents</a></div>
+            <div class="box box6" onclick="openNav()"><a>Sample Projects</a></div>
+            <div class="box box7" onclick="openNav()"><a>FAQ</a></div>
+            <div class="box box8" onclick="openNav()"><a>Team Showcase</a></div>
+            <div class="box box9" onclick="openNav()"><a>Archives</a></div>
+            <div class="box box10" onclick="openNav()"><a>About Us</a></div>
+        </div>
+    </div>
+
+    <!--White Half Circle Event Information-->
+    <section>
+        <div><h4>ACM UWB Presents</h4></div>
+        <div>
+            <h1>UWB Hacks the Cloud</h1>
+            <h4>April 17, 2020 9am-10pm</h4>
+            <h4>UWB ARC Overlook</h4>
+        </div>
+    </section>
+
+    <!--Green Card Content Slide Navigation -->
+    <div id="myNav" class="overlayGreen">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="image_card1">
+                <img class="responsive" src="images/gameboy.jpg" alt="Circuit Board Image">
+            </div>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!--Green Card Content Slide Navigation -->
+<!--    <div id="myNav" class="overlayGold">-->
+<!--        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+<!--        <div class="overlay-content">-->
+<!--            <div class="image_card1">-->
+<!--                <img class="responsive" src="images/floppy1.jpg" alt="Circuit Board Image">-->
+<!--            </div>-->
+<!--            <a href="#">Services</a>-->
+<!--            <a href="#">Clients</a>-->
+<!--            <a href="#">Contact</a>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav (){
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    </body>
+</html>
