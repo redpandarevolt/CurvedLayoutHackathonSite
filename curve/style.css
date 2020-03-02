@@ -6,13 +6,13 @@ h1{
     font-size: 40px;
     font-family: 'Share Tech Mono', sans-serif;
     text-align: center;
-
 }
 
 h2, h3{
     font-family: 'Share Tech Mono', sans-serif;
     padding: 5px 0;
 }
+
 h4{
     font-family: 'Share Tech Mono', sans-serif;
     padding:2px 0;
@@ -174,7 +174,7 @@ section {
 .overlay2 a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 30px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -736,23 +736,27 @@ section {
 
 
 /*===============Social Media and Hover to Links==========*/
- a {
-    color: dimgrey;
-    font-weight: 100;
-    letter-spacing: 2px;
-    padding: 5px 5px;
-    display: inline-block;
-    width: 15%;
-    text-align: center;
-    transition: all 0.5s;
-    text-decoration: none;
+/* a {*/
+/*    color: dimgrey;*/
+/*    font-weight: 100;*/
+/*    letter-spacing: 2px;*/
+/*    padding: 5px 5px;*/
+/*    display: inline-block;*/
+/*    width: 15%;*/
+/*    text-align: center;*/
+/*    transition: all 0.5s;*/
+/*    text-decoration: none;*/
 
+/*}*/
+
+ /*============hover over links=========*/
+.fa{
+    color: lightslategray;
+    size: 30px;
 }
-
-/* ============hover over links=========*/
- a:hover {
+.fa:hover {
     background-color: deepskyblue;
-    color: darkgoldenrod;
+    color: #457eb8;
     -webkit-animation: grow;
     padding: 2px 20px;
 }
@@ -801,13 +805,14 @@ section {
     font-family: 'Share Tech Mono', sans-serif;
     color: darkviolet;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .registration:hover {
     -webkit-animation: grow;
     padding: 8px 8px;
+    background-color: darkviolet;
     color: gold;
-    background-color: blueviolet;
 }/*=======Registration Button End ==========*/
 
 /*========Flex Boxes on Info Slide Out Cards=========*/
@@ -854,6 +859,7 @@ section {
     line-height: 1px;
 }
 
+/*=======tablet media query==================*/
 @media only screen and (max-width: 768px) {
     .title{
         width: 40%;
@@ -878,6 +884,8 @@ section {
         margin-bottom: 15px;
     }
 }
+
+/*=========cell phone media query===========*/
 @media only screen and (max-width: 425px){
     .registration{
         margin-left: 10px;
@@ -900,21 +908,26 @@ section {
     }
 
 }
- .docs  button{
 
-    background-color: lightslategray;
-    color: white;
+ /*=====document button========*/
+ .overlay2 button {
+
+    background-color: white;
+    color: dodgerblue;
     align-items: center;
     border-radius:10px;
     margin-left: 20px;
+     font-size: 15px;
 }
 
- .docs:hover {
+ .overlay2 button:hover  {
     -webkit-animation: grow;
     color: darkorange;
     background-color: dodgerblue;
 }
 
+
+/* ===========sections on card made for stacking on small screen*/
 .flex-columns{
     display: flex;
     flex-direction: row;
