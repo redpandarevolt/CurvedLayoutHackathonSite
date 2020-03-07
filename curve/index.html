@@ -1,3 +1,4 @@
+<!--Updated 3/2 10pm -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,25 +11,24 @@
 </head>
 <body>
 
-
     <!--Front Page Rainbow Navigation on Right-->
     <div class="rightNav">
         <div class="container">
-            <div class="box box1" onclick="openNav1(myNav1)" ><p>About UWB Hacks</p></div>
-            <div class="box box2" onclick="openNav2(myNav2)"><p>Cloud Project Ideas</p></div>
-            <div class="box box3" onclick="openNav3(myNav3)"><p>Schedule</p></div>
-            <div class="box box4" onclick="openNav4(myNav4)"><p>FAQ</p></div>
-            <div class="box box5" onclick="openNav5(myNav5)"><p>Sponsors</p></div>
-            <div class="box box6" onclick="openNav6(myNav6)"><p>Project Showcase</p></div>
-            <div class="box box7" onclick="openNav7(myNav7)"><p>Sessions</p></div>
-            <div class="box box8" onclick="openNav8(myNav8)"><p>Stay Tune</p></div>
+            <div class="box box1 tablinks" onclick="openNav1(myNav1);switchTab(evt, myNav1);"><p>About UWB Hacks</p></div>
+            <div class="box box2 tablinks" onclick="openNav2(myNav2);switchTab(evt, myNav2);"><p>Cloud Project Ideas</p></div>
+            <div class="box box3 tablinks" onclick="openNav3(myNav3);switchTab(evt, myNav3)"><p>Schedule</p></div>
+            <div class="box box4 tablinks" onclick="openNav4(myNav4);switchTab(evt, myNav4)"><p>FAQ</p></div>
+            <div class="box box5 tablinks" onclick="openNav5(myNav5);switchTab(evt, myNav5)"><p>Sponsors</p></div>
+            <div class="box box6 tablinks" onclick="openNav6(myNav6);switchTab(evt, myNav6)"><p>Project Showcase</p></div>
+            <div class="box box7 tablinks" onclick="openNav7(myNav7);switchTab(evt, myNav7)"><p>Acknowledgements</p></div>
+<!--            <div class="box box8" onclick="openNav8(myNav8);switchTab(evt, myNav8)"><p>Stay Tune</p></div>-->
         </div>
     </div>
 
     <!--White Half Circle Event Information-->
-    <section>
-        <div>
-            <div class="wrapper">
+    <section >
+        <div >
+            <div class="wrapper" >
                 <nav class="flex-nav">
                     <ul>
                         <!-- Social Media Icon LInks -->
@@ -44,6 +44,9 @@
                     </ul>
                     <hr style="width: 75%; float:left;">
                 </nav>
+
+
+
             </div>
 
             <div class="title">UWB Hacks the Cloud
@@ -58,15 +61,21 @@
                 <h4>NCEC</h4>
             </div>
         </div>
+        <div class="cloud x1"></div>
+        <!-- Time for multiple clouds to dance around -->
+        <div class="cloud x2"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
     </section>
 
     <!--Card 1 Content Slide Navigation -->
-    <div id="myNav1" class="overlay1">
+    <div id="myNav1" class="overlay1 tabcontent">
         <div class="flex-container">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
             <div class="overlay1-content">
                 <div class="image_card1">
-                    <img class="responsive" src="images/gameboy.jpg" alt="Circuit Board Image">
+                    <img class="responsive" src="gameboy.jpg" alt="Circuit Board Image">
                 </div>
             </div>
             <div style="padding: 5px;"><h1>About UWB Hacks</h1>
@@ -104,12 +113,12 @@
 
 <!--   Card  2 Content Slide Navigation -->
 
-    <div id="myNav2" class="overlay2">
+    <div id="myNav2" class="overlay2 tabcontent">
         <div class="flex-container">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
             <div class="overlay2-content">
                 <div class="image_card2">
-                    <img class="responsive" src="images/floppy1.jpg" alt="Circuit Board Image">
+                    <img class="responsive" src="floppy1.jpg" alt="Circuit Board Image">
                 </div>
             </div>
             <div><h1>Cloud Project Ideas</h1>
@@ -149,17 +158,17 @@
     </div>
 
     <!--   Card 3 Content Slide Navigation -->
-    <div id="myNav3" class="overlay3">
+    <div id="myNav3" class="overlay3 tabcontent">
         <div class="flex-container">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
             <div class="overlay3-content">
                 <div class="image_card3">
-                    <img class="responsive" src="images/parts1.jpg" alt="Circuit Board Image">
+                    <img class="responsive" src="parts1.jpg" alt="Circuit Board Image">
                 </div>
             </div>
             <div><h1>Event Schedule</h1>
                 <table class="schedule">
-                    <tr><th>9:00</th><th>Check-In BeginsCheck-In Begins</th></tr>
+                    <tr><th>9:00</th><th>Check-In Begins</th></tr>
                     <tr><th>9:15</th><th>Free Breakfast </th></tr>
                     <tr><th>10:00</th><th>Opening Ceremony</th></tr>
                     <tr><th>10:30</th><th>Team Formation Mixer, hosted by ACM-W</th></tr>
@@ -184,12 +193,12 @@
     </div>
 
     <!--   Card 4 Content Slide Navigation -->
-    <div id="myNav4" class="overlay4">
+    <div id="myNav4" class="overlay4 tabcontent">
         <div class="flex-container">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
             <div class="overlay4-content">
                 <div class="image_card4">
-                    <img class="responsive" src="images/lmnc.jpg" alt="Circuit Board Image">
+                    <img class="responsive" src="lmnc.jpg" alt="Circuit Board Image">
                 </div>
             </div>
             <div><h1>Frequently Asked Questions!</h1>
@@ -234,15 +243,15 @@
     </div>
 
     <!--   Card 5 Content Slide Navigation -->
-    <div id="myNav5" class="overlay5">
+    <div id="myNav5" class="overlay5 tabcontent">
         <div class="flex-container">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
             <div class="overlay5-content">
                 <div class="image_card5">
-                    <img class="responsive" src="images/pcb-wall.jpg" alt="Circuit Board Image">
+                    <img class="responsive" src="pcb-wall.jpg" alt="Circuit Board Image">
                 </div>
             </div>
-<!--            <div><h3>Content 3</h3> </div>-->
+            <div><h3>More Information Comming Soon!! </h3> </div>
         </div>
         <div class="flex-container">
 <!--            <div><h3>Content 2</h3> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>-->
@@ -250,17 +259,17 @@
         </div>
     </div>
 
-    <!--   Card 6 Content Slide Navigation -->
-    <div id="myNav6" class="overlay6">
+    <!--=================Card 6 Content Slide Navigation============-->
+    <div id="myNav6" class="overlay6 tabcontent">
 
         <div class="flex-container">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
             <div class="overlay6-content">
                 <div class="image_card6">
-                    <img class="responsive" src="images/computer2.jpg" alt="Circuit Board Image">
+                    <img class="responsive" src="computer2.jpg" alt="Circuit Board Image">
                 </div>
             </div>
-<!--            <div><h3>Content 3</h3> </div>-->
+            <div><h3>More Information Comming Soon!! </h3> </div>
         </div>
         <div class="flex-container">
 <!--            <div><h3>Content 2</h3> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>-->
@@ -268,50 +277,53 @@
         </div>
     </div>
 
-    <!--   Card 7 Content Slide Navigation -->
-    <div id="myNav7" class="overlay7">
+<!--===============Card 7 Content Slide Navigation==================-->
+    <div id="myNav7" class="overlay7 tabcontent">
         <div class="flex-container">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
             <div class="overlay7-content">
                 <div class="image_card7">
-                    <img class="responsive" src="images/computer1.jpg" alt="Circuit Board Image">
+                    <img class="responsive" src="computer1.jpg" alt="Circuit Board Image">
                 </div>
             </div>
-<!--            <div><h3>Content 3</h3> </div>-->
+            <div>
+                <h1>Acknowledgements</h1>
+                <ul><h2>The Organizers would like to thank the following individuals for their assistance:</h2>
+                    <li>All our fantastic industry mentors</li>
+                    <li>Professor Robert Dimpsey</li>
+                    <li>UW Bothell Club Council</li>
+                    <li>UW Bothell Makerspace</li>
+                    <li>UWB ACM 2020 Officers</li>
+                    <li>Marcela Gomez, Web Development</li>
+                </ul>
+            </div>
+
         </div>
 
         <div class="flex-container">
-<!--            <div><h3>Content 2</h3> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>-->
+            <div>
+                <ul>
+                    <h2>For all prize materials that were modeled and
+                        created on campus, we’d like to thank the following individuals:</h2>
+                    <li>Prize List to Be Revealed Soon. </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
 <!--            <div><h3>Content 3</h3> </div>-->
         </div>
     </div>
 
-    <!--  Card 8Content Slide Navigation -->
-    <div id="myNav8" class="overlay8">
-        <div class="flex-container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
-            <div class="overlay8-content">
-                <div class="image_card8">
-                    <img class="responsive" src="images/computer2.jpg" alt="Circuit Board Image">
-                </div>
-            </div>
-<!--            <div><h3>Content 3</h3> </div>-->
-        </div>
-        <div class="flex-container">
-<!--            <div><h3>Content 2</h3> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>-->
-<!--            <div><h3>Content 3</h3> </div>-->
-        </div>
-
-    </div>
-<!--==================Leave in Place in case more content needs to be added==============-->
-<!--=====================================================================================-->
-    <!--   Card 9  Content Slide Navigation -->
-<!--    <div id="myNav9" class="overlay9">-->
+<!--    &lt;!&ndash;  Card 8Content Slide Navigation &ndash;&gt;-->
+<!--    <div id="myNav8" class="overlay8">-->
 <!--        <div class="flex-container">-->
-<!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</a>-->
-<!--            <div class="overlay9-content">-->
-<!--                <div class="image_card9">-->
-<!--                    <img class="responsive" src="images/upsplash.jpg" alt="Circuit Board Image">-->
+<!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>-->
+<!--            <div class="overlay8-content">-->
+<!--                <div class="image_card8">-->
+<!--                    <img class="responsive" src="images/computer2.jpg" alt="Circuit Board Image">-->
 <!--                </div>-->
 <!--            </div>-->
 <!--&lt;!&ndash;            <div><h3>Content 3</h3> </div>&ndash;&gt;-->
@@ -320,46 +332,58 @@
 <!--&lt;!&ndash;            <div><h3>Content 2</h3> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>&ndash;&gt;-->
 <!--&lt;!&ndash;            <div><h3>Content 3</h3> </div>&ndash;&gt;-->
 <!--        </div>-->
-<!--    </div>-->
 
-    <!--   Card  10 Content Slide Navigation -->
-<!--    <div id="myNa10v" class="overlay10">-->
-<!--        <a href="javascript:void(0)" class="closebtn" onclick="closeNav10()">&times;</a>-->
-<!--        <div class="overlay10-content">-->
-<!--            <div class="image_card10">-->
-<!--                <img class="responsive" src="images/resist.jpg" alt="Circuit Board Image">-->
-<!--            </div>-->
-<!--            <a href="#">Services</a>-->
-<!--            <a href="#">Clients</a>-->
-<!--            <a href="#">Contact</a>-->
-<!--        </div>-->
 <!--    </div>-->
+<!--==================Leave in Place in case more content needs to be added==============-->
 
-    <!--==================Leave above  in case more content needs to be added===============-->
-    <!--=====================================================================================-->
 
     <!--Open and Close Each Individual Content/Image Info Card-->
     <script>
-        function openNav1(id) {document.getElementById("myNav1").style.width = "90%";}
-        function closeNav1 (id){document.getElementById("myNav1").style.width = "0%";}
-        function openNav2(id) {document.getElementById("myNav2").style.width = "90%";}
-        function closeNav2 (id){document.getElementById("myNav2").style.width = "0%";}
-        function openNav3(id) {document.getElementById("myNav3").style.width = "90%";}
-        function closeNav3 (id){document.getElementById("myNav3").style.width = "0%";}
-        function openNav4(id) {document.getElementById("myNav4").style.width = "90%";}
-        function closeNav4 (id){document.getElementById("myNav4").style.width = "0%";}
-        function openNav5(id) {document.getElementById("myNav5").style.width = "90%";}
-        function closeNav5 (id){document.getElementById("myNav5").style.width = "0%";}
-        function openNav6(id) {document.getElementById("myNav6").style.width = "90%";}
-        function closeNav6 (id){document.getElementById("myNav6").style.width = "0%";}
-        function openNav7(id) {document.getElementById("myNav7").style.width = "90%";}
-        function closeNav7 (id){document.getElementById("myNav7").style.width = "0%";}
-        function openNav8(id) {document.getElementById("myNav8").style.width = "90%";}
-        function closeNav8 (id){document.getElementById("myNav8").style.width = "0%";}
-        function openNav9(id) {document.getElementById("myNav9").style.width = "90%";}
-        function closeNav9 (id){document.getElementById("myNav9").style.width = "0%";}
-        function openNav10(id) {document.getElementById("myNav10").style.width = "90%";}
-        function closeNav10 (id){document.getElementById("myNav10").style.width = "0%";}
+
+        function openNav1(i) {document.getElementById("myNav1").style.width = "90%";}
+        function closeNav1(i){document.getElementById("myNav1").style.width = "0%";}
+        function openNav2(i) {document.getElementById("myNav2").style.width = "90%";}
+        function closeNav2(d){document.getElementById("myNav2").style.width = "0%";}
+        function openNav3(d) {document.getElementById("myNav3").style.width = "90%";}
+        function closeNav3(d){document.getElementById("myNav3").style.width = "0%";}
+        function openNav4(d) {document.getElementById("myNav4").style.width = "90%";}
+        function closeNav4(d){document.getElementById("myNav4").style.width = "0%";}
+        function openNav5(d) {document.getElementById("myNav5").style.width = "90%";}
+        function closeNav5(d){document.getElementById("myNav5").style.width = "0%";}
+        function openNav6(d) {document.getElementById("myNav6").style.width = "90%";}
+        function closeNav6(d){document.getElementById("myNav6").style.width = "0%";}
+        function openNav7(d) {document.getElementById("myNav7").style.width = "90%";}
+        function closeNav7(d){document.getElementById("myNav7").style.width = "0%";}
+        // function openNav8(id) {document.getElementById("myNav8").style.width = "90%";}
+
+        // $('.panel-title').click(function() {
+        //     if ($(this).find('.fa').hasClass('fa-plus')) {
+        //         $('#faq .fa').removeClass('fa-minus').addClass('fa-plus');
+        //         $(this).find('.fa').removeClass('fa-plus').addClass('fa-minus');
+        //     } else {
+        //         $(this).find('.fa').removeClass('fa-minus').addClass('fa-plus');
+        //     }
+        // });
+
+        function switchTab(evt, myNav) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(myNav).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
     </body>
 </html>
